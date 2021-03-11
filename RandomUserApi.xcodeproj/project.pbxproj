@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F2BC693625FA7195001FC327 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = F2BC693525FA7195001FC327 /* Introspect */; };
 		F2FD6DA025F7CD1400732252 /* RandomUserApiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FD6D9F25F7CD1400732252 /* RandomUserApiApp.swift */; };
 		F2FD6DA225F7CD1400732252 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FD6DA125F7CD1400732252 /* ContentView.swift */; };
 		F2FD6DA425F7CD1800732252 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2FD6DA325F7CD1800732252 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2FD6DB525F7CEBC00732252 /* URLImage in Frameworks */,
+				F2BC693625FA7195001FC327 /* Introspect in Frameworks */,
 				F2FD6DBC25F7D23E00732252 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -120,6 +122,7 @@
 			packageProductDependencies = (
 				F2FD6DB425F7CEBC00732252 /* URLImage */,
 				F2FD6DBB25F7D23D00732252 /* Alamofire */,
+				F2BC693525FA7195001FC327 /* Introspect */,
 			);
 			productName = RandomUserApi;
 			productReference = F2FD6D9C25F7CD1400732252 /* RandomUserApi.app */;
@@ -151,6 +154,7 @@
 			packageReferences = (
 				F2FD6DB325F7CEBC00732252 /* XCRemoteSwiftPackageReference "url-image" */,
 				F2FD6DBA25F7D23D00732252 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				F2BC693425FA7195001FC327 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
 			);
 			productRefGroup = F2FD6D9D25F7CD1400732252 /* Products */;
 			projectDirPath = "";
@@ -374,6 +378,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		F2BC693425FA7195001FC327 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/siteline/SwiftUI-Introspect.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.2;
+			};
+		};
 		F2FD6DB325F7CEBC00732252 /* XCRemoteSwiftPackageReference "url-image" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/dmytro-anokhin/url-image";
@@ -393,6 +405,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		F2BC693525FA7195001FC327 /* Introspect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F2BC693425FA7195001FC327 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
+			productName = Introspect;
+		};
 		F2FD6DB425F7CEBC00732252 /* URLImage */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F2FD6DB325F7CEBC00732252 /* XCRemoteSwiftPackageReference "url-image" */;
