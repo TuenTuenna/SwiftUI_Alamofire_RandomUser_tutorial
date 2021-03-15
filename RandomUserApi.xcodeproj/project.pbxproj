@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F279A00825FFB40000910250 /* RandomUserRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F279A00725FFB40000910250 /* RandomUserRouter.swift */; };
 		F2BC693625FA7195001FC327 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = F2BC693525FA7195001FC327 /* Introspect */; };
 		F2FD6DA025F7CD1400732252 /* RandomUserApiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FD6D9F25F7CD1400732252 /* RandomUserApiApp.swift */; };
 		F2FD6DA225F7CD1400732252 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FD6DA125F7CD1400732252 /* ContentView.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F279A00725FFB40000910250 /* RandomUserRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserRouter.swift; sourceTree = "<group>"; };
 		F2FD6D9C25F7CD1400732252 /* RandomUserApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomUserApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2FD6D9F25F7CD1400732252 /* RandomUserApiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserApiApp.swift; sourceTree = "<group>"; };
 		F2FD6DA125F7CD1400732252 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -47,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F279A00625FFB3F000910250 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				F279A00725FFB40000910250 /* RandomUserRouter.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		F2FD6D9325F7CD1400732252 = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +76,7 @@
 		F2FD6D9E25F7CD1400732252 /* RandomUserApi */ = {
 			isa = PBXGroup;
 			children = (
+				F279A00625FFB3F000910250 /* API */,
 				F2FD6DBE25F7D2BE00732252 /* Data */,
 				F2FD6DAF25F7CD6900732252 /* UI */,
 				F2FD6D9F25F7CD1400732252 /* RandomUserApiApp.swift */,
@@ -188,6 +199,7 @@
 				F2FD6DB125F7CDB900732252 /* ProfileImgView.swift in Sources */,
 				F2FD6DC425F7D5BB00732252 /* RandomUserViewModel.swift in Sources */,
 				F2FD6DA025F7CD1400732252 /* RandomUserApiApp.swift in Sources */,
+				F279A00825FFB40000910250 /* RandomUserRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
