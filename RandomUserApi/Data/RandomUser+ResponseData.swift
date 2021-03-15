@@ -30,8 +30,17 @@ struct RandomUser: Codable, Identifiable, CustomStringConvertible {
     var description: String {
         return name.description
     }
+}
+
+// 비교를 위한 Equatable 프로토콜
+extension RandomUser : Equatable {
+    
+    static func == (lhs: RandomUser, rhs: RandomUser) -> Bool {
+        return lhs.id == rhs.id
+    }
     
 }
+
 
 struct Name: Codable, CustomStringConvertible {
     var title : String
@@ -60,7 +69,7 @@ struct Photo: Codable {
     }
 }
 
-struct Info : Codable {
+struct Info : Codable, CustomStringConvertible {
     var seed : String
     var resultsCount : Int
     var page : Int
@@ -70,6 +79,9 @@ struct Info : Codable {
         case resultsCount = "results"
         case page = "page"
         case version = "version"
+    }
+    var description: String {
+        return "seed: \(seed) / version: \(version) / resultsCount: \(resultsCount), page: \(page)"
     }
 }
 
